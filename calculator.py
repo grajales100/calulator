@@ -2,6 +2,21 @@ def suma():
 def resta():
 def multiplicacion():
 def division():
+    print (' ')
+    print ('///DIVISION///')
+    print (' ')
+    dividendo=float(input('   INGRESE EL NUMERO DIVIDENDO : '))
+    divisor=float(input('   INGRESE EL NUMERO DIVISOR : '))
+    print (' ')
+    if (divisor < 1):
+        print ('//EL DIVISOR ES CERO, INGRESE UN DIVISOR MAYOR A 0')
+        division()
+
+    elif (divisor >= 1):
+        resultadoD=float(dividendo/divisor)
+        print ('El resultado de la division',dividendo,"/",divisor)
+        print ('Es',resultadoD)
+
 def menu():
     print(" ")
     print("///////////////////////Bienvenido al programa de calculadora///////////////////////")
