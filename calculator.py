@@ -33,6 +33,8 @@ def multiplicacion():
         numero=float(input())
         multiplicacion=numero*multiplicacion
         cantidad=cantidad-1
+        
+        
     print('la multiplicacion es:', multiplicacion)
 def division():
     print ('///DIVISION///')
@@ -72,3 +74,5 @@ def menu():
             quit()
         else:
             menu()
+            
+menu()
