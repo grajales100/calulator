@@ -1,6 +1,18 @@
 def suma():
+    print("*****ESTAMOS EN LA OPERACIÓN DE SUMA*****")
+    print("")
+    print("Ingrese la cantidad de números que desea sumar. Se informa que solo puede ingresar números de tipo enteros. ")
+    numeros=int(input()) 
+    i=0
+    suma=0
+    while i <numeros:
+        print("Ingrese el número que desea sumar ")
+        cuales=int(input())
+        suma=suma+cuales
+        i=i+1
+    print("La suma de los: ", cuales, " números es igual a: ", suma)    
 def resta():
-def multiplicacion():
+def multiplicacion():    
 def division():
 def menu():
     print(" ")
