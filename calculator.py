@@ -1,7 +1,20 @@
 def suma():
+    pass
 def resta():
+    pass
 def multiplicacion():
+    print('cuantos numeros desea multiplicar')
+    cantidad=int(input())
+    multiplicacion=1
+    while cantidad>=1:
+        print('por favor ingrese el numero que desea multiplicar')
+        numero=float(input())
+        multiplicacion=numero*multiplicacion
+        cantidad=cantidad-1
+    print('la multiplicacion es:', multiplicacion)
+
 def division():
+    pass
 def menu():
     print(" ")
     print("///////////////////////Bienvenido al programa de calculadora///////////////////////")
@@ -26,3 +39,5 @@ def menu():
             quit()
         else:
             menu()
+
+menu()
