@@ -1,5 +1,17 @@
 
 def suma():
+    print("*****ESTAMOS EN LA OPERACIÓN DE SUMA*****")
+    print("")
+    print("Ingrese la cantidad de números que desea sumar. Se informa que solo puede ingresar números de tipo enteros. ")
+    numeros=int(input()) 
+    i=0
+    suma=0
+    while i <numeros:
+        print("Ingrese el número que desea sumar ")
+        cuales=int(input())
+        suma=suma+cuales
+        i=i+1
+    print("La suma de los: ", cuales, " números es igual a: ", suma)    
 def resta():
     print("") 
     print("RESTA")
@@ -21,7 +33,7 @@ def multiplicacion():
         numero=float(input())
         multiplicacion=numero*multiplicacion
         cantidad=cantidad-1
-    print('la multiplicacion es:', multiplicacion
+    print('la multiplicacion es:', multiplicacion)
 def division():
     print ('///DIVISION///')
     print (' ')
@@ -31,6 +43,11 @@ def division():
     if (divisor < 1):
         print ('//EL DIVISOR ES CERO, INGRESE UN DIVISOR MAYOR A 0')
         division()
+    elif (divisor >= 1):
+        resultadoD=float(dividendo/divisor)
+        print ('El resultado de la division',dividendo,"/",divisor)
+        print ('Es',resultadoD)
+    
 def menu():
     print(" ")
     print("///////////////////////Bienvenido al programa de calculadora///////////////////////")
