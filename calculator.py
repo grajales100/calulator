@@ -1,5 +1,17 @@
+
 def suma():
 def resta():
+    print("") 
+    print("RESTA")
+    print("")
+    
+    num1=float(input("Ingrese el primer digito: ")) 
+    num2=float(input("Ingrese el segundo digito: "))
+    
+    resta=num1-num2
+    
+    print("La resta es igual a: ", resta)
+
 def multiplicacion():
 def division():
 def menu():
